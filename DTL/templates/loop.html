@@ -1,0 +1,17 @@
+{% extends "basic.html" %}
+
+{% block title %} loop page{% endblock %}
+{% block style %}{% endblock %}
+{% block body %}
+<p>{{ days_of_weak|upper }}</p>
+
+<p>{% for i in days_of_weak %}
+{{ i }}
+
+</p>
+
+{% endfor %}
+
+{% endblock %}
+
+{% block comment %} i am  comment {% endblock %}

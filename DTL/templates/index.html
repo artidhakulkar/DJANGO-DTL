@@ -1,0 +1,23 @@
+{% extends "basic.html" %}
+
+{% block title %}{% endblock %}
+{% block style %}{% endblock %}
+{% block body %}
+<h1> Hello world !</h1>
+
+<!--variable start here -->
+<p>today is {{ today }}</p>
+
+
+<p>welcome to the world of year {{today.year}}</p>
+
+<p>welcome to the world of day {{today.day}}</p>
+
+<p>welcome to the world of month {{ today.month }}</p>
+
+<p>welcome to the world of current time {{ today.time}}</p>
+<!--variable end here-->
+
+
+
+{% endblock %}

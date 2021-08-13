@@ -1,0 +1,27 @@
+{% extends "basic.html" %}
+
+{% block title %} conditions page{% endblock %}
+{% block style %}
+body{
+background-color:green;
+
+}s
+
+
+{% endblock %}
+{% block body %}
+<h1>Today is {{ today }}</h1>
+
+{% if today.day == 24 %}
+<p> i am lucky  </p>
+{% elif today.day == 1%}
+<p>I am not lucky </p>
+
+{%  else % }
+<p>i dont know</p>
+
+{% endif %}
+
+
+
+{% endblock %}
